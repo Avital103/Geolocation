@@ -8,12 +8,14 @@ const config = require('../config/config')[env];
 
 const dbConnection = new Sequelize(config.database.distance);
 
-dbConnection.authenticate()
-    .then(() => {
-        console.log('info', 'connected sequelize distance')
-    })
-    .catch((e: any) => {
-        console.log('error', e)
-    })
+export async function checkConnectionToDB() {
+    await dbConnection.authenticate()
+        .then(() => {
+            return true;
+        })
+        .catch(() => {
+            return false;
+        })
+}
 
 export const Distance = distanceFactory(dbConnection);

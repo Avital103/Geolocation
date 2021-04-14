@@ -26,3 +26,4 @@ export function saveToDB(source: string, destination: string, distance: number) 
         distance: distance
     });
 }
+
