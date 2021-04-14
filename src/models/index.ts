@@ -8,6 +8,7 @@ const config = require('../config/config')[env];
 
 export const dbConnection = new Sequelize(config.database.distance);
 
+dbConnection.sync()
 export async function checkConnectionToDB() {
     try {
         await dbConnection.authenticate()

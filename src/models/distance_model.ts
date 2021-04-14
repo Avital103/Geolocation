@@ -4,7 +4,8 @@ export interface distanceAttributes {
     id?: number,
     source: string,
     destination: string,
-    distance: number
+    distance: number,
+    hits?: number
 }
 
 export interface distanceModel extends Model<distanceAttributes>, distanceAttributes {
@@ -33,9 +34,13 @@ export function distanceFactory(sequelize: Sequelize): distanceStatic {
             allowNull: false
         },
         distance: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.DECIMAL(10,2),
             allowNull: false
         },
+        hits: {
+            type: DataTypes.INTEGER,
+            defaultValue: 1
+        }
     }, {
         timestamps: true,
         tableName: 'distance',
