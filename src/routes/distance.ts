@@ -39,16 +39,13 @@ distanceRouter.get('/', validateReqData(), handleValidations, async function (re
 
 distanceRouter.post('/', validateReqBodyData(), handleValidations, async function (req: Request, res: Response) {
     let {source, destination, distance} = req.body;
-    if (source && destination && distance) {
-        try {
-            saveToDB(source, destination, distance);
-            res.status(201).send();
-        } catch (e) {
-            console.log(e)
-        }
-    } else {
-        res.status(400).send('missing info');
+    try {
+        saveToDB(source, destination, distance);
+        res.status(201).send();
+    } catch (e) {
+        console.log(e)
     }
+    res.status(400).send('missing info');
 });
 
 module.exports = distanceRouter;
