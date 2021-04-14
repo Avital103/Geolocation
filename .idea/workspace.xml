@@ -20,13 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a2d0da1-754b-46cf-b52f-e07f7bf305a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/routes/popular_search.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data_access/distance_data_access.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_access/distance_data_access.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/distance_model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/distance_model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__tests__/distance_test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/distance_test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/distance.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/distance.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +73,7 @@
       <recent name="C:\Users\User\Documents\Geolocation\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.GET popular search./GET - should return code 200">
+  <component name="RunManager" selected="Jest.GET distance./POST add distance for test and test 2">
     <configuration name="GET distance./GET error" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -92,6 +88,20 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="GET distance./POST add distance for test and test 2" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/distance_test.ts" />
+      <test-names>
+        <test-name value="GET distance" />
+        <test-name value="/POST add distance for test and test 2" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="GET hello./GET - should return code 200" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -102,20 +112,6 @@
       <test-file value="$PROJECT_DIR$/src/__tests__/hello_test.ts" />
       <test-names>
         <test-name value="GET hello" />
-        <test-name value="/GET - should return code 200" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="GET popular search./GET - should return code 200" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/__tests__/popular_search_test.ts" />
-      <test-names>
-        <test-name value="GET popular search" />
         <test-name value="/GET - should return code 200" />
       </test-names>
       <method v="2" />
@@ -142,9 +138,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.GET popular search./GET - should return code 200" />
-        <item itemvalue="npm.start" />
+        <item itemvalue="Jest.GET distance./POST add distance for test and test 2" />
         <item itemvalue="npm.test" />
+        <item itemvalue="npm.start" />
         <item itemvalue="Jest.GET hello./GET - should return code 200" />
         <item itemvalue="Jest.GET distance./GET error" />
       </list>
@@ -160,7 +156,7 @@
       <updated>1618401368974</updated>
       <workItem from="1618401370172" duration="324000" />
       <workItem from="1618401715783" duration="12472000" />
-      <workItem from="1618414359408" duration="9829000" />
+      <workItem from="1618414359408" duration="10486000" />
     </task>
     <task id="LOCAL-00001" summary="add unit test">
       <created>1618401825015</created>
@@ -204,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618419796201</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="API 4: get the most popular search and number of hits for that search">
+      <created>1618425573504</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1618425573504</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,7 +232,8 @@
     <MESSAGE value="Add a check is DB accessible" />
     <MESSAGE value="API 3: Health" />
     <MESSAGE value="Add Dockerfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Dockerfile" />
+    <MESSAGE value="API 4: get the most popular search and number of hits for that search" />
+    <option name="LAST_COMMIT_MESSAGE" value="API 4: get the most popular search and number of hits for that search" />
   </component>
   <component name="WindowStateProjectService">
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618401415090">
@@ -252,22 +256,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1618418416530" />
-    <state width="1259" height="147" key="GridCell.Tab.0.bottom" timestamp="1618425049843">
+    <state width="1259" height="147" key="GridCell.Tab.0.bottom" timestamp="1618425557002">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="147" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1618425049843" />
-    <state width="1259" height="147" key="GridCell.Tab.0.center" timestamp="1618425049842">
+    <state width="1259" height="147" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1618425557002" />
+    <state width="1259" height="147" key="GridCell.Tab.0.center" timestamp="1618425557002">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="147" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1618425049842" />
-    <state width="1259" height="147" key="GridCell.Tab.0.left" timestamp="1618425049842">
+    <state width="1259" height="147" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1618425557002" />
+    <state width="1259" height="147" key="GridCell.Tab.0.left" timestamp="1618425557002">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="147" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1618425049842" />
-    <state width="1259" height="147" key="GridCell.Tab.0.right" timestamp="1618425049842">
+    <state width="1259" height="147" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1618425557002" />
+    <state width="1259" height="147" key="GridCell.Tab.0.right" timestamp="1618425557002">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="147" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1618425049842" />
+    <state width="1259" height="147" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1618425557002" />
     <state width="1259" height="241" key="GridCell.Tab.1.bottom" timestamp="1618424972199">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -320,10 +324,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="0" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1618410904978" />
-    <state x="233" y="61" key="Vcs.Push.Dialog.v2" timestamp="1618419802526">
+    <state x="233" y="61" key="Vcs.Push.Dialog.v2" timestamp="1618425575360">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="61" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1618419802526" />
+    <state x="233" y="61" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1618425575360" />
     <state x="458" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1618401559340">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -332,47 +336,5 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="347" y="73" width="587" height="534" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1618424851755" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/data_access/distance_data_access.ts</url>
-          <line>45</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/data_access/distance_data_access.ts</url>
-          <line>46</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/data_access/distance_data_access.ts</url>
-          <line>49</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/data_access/distance_data_access.ts</url>
-          <line>47</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/routes/distance.ts</url>
-          <line>20</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/routes/popular_search.ts</url>
-          <line>6</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

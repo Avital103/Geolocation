@@ -36,4 +36,18 @@ distanceRouter.get('/', async function (req, res) {
     res.status(200).send({'distance': distance});
 });
 
+distanceRouter.post('/', async function (req, res) {
+    let {source, destination, distance} = req.body;
+    if (source && destination && distance) {
+        try {
+            saveToDB(source, destination, distance);
+            res.status(201).send();
+        } catch (e) {
+            console.log(e)
+        }
+    } else {
+        res.status(400).send('missing info');
+    }
+});
+
 module.exports = distanceRouter;
