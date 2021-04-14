@@ -2,8 +2,7 @@ import {Distance} from "../models";
 import {Op} from "sequelize";
 
 export async function getDistanceBySourceAndDestination(source: string, destination: string) {
-    let distance: number;
-    let result = await Distance.findOne({
+    return await Distance.findOne({
         attributes: ['distance'],
         where: {
             [Op.or]: [
@@ -18,10 +17,12 @@ export async function getDistanceBySourceAndDestination(source: string, destinat
             ]
         }
     });
-    if (result != null) {
-        distance = result.distance;
-    } else {
-        distance = 0;
-    }
-    return distance;
+}
+
+export function saveToDB(source: string, destination: string, distance: number) {
+    Distance.create({
+        source: source,
+        destination: destination,
+        distance: distance
+    });
 }
