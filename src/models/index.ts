@@ -6,16 +6,16 @@ dotenv.config()
 const env = process.env.NODE_ENV || 'development';
 const config = require('../config/config')[env];
 
-const dbConnection = new Sequelize(config.database.distance);
+export const dbConnection = new Sequelize(config.database.distance);
 
 export async function checkConnectionToDB() {
-    await dbConnection.authenticate()
-        .then(() => {
-            return true;
-        })
-        .catch(() => {
-            return false;
-        })
+    try {
+        await dbConnection.authenticate()
+        return true;
+    } catch (err) {
+        console.error('Unable to connect to the database:', err)
+        return false;
+    }
 }
 
 export const Distance = distanceFactory(dbConnection);
