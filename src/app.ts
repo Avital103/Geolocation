@@ -1,13 +1,11 @@
-let express = require('express');
-let cookieParser = require('cookie-parser');
+import express from 'express';
 
-let indexRouter = require('./routes/index');
+let indexRouter = require('./routes');
 
 let app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
 
 app.use('/', indexRouter);
 
@@ -19,4 +17,4 @@ if (process.env.NODE_ENV !== 'test') {
     });
 }
 
-module.exports = app;
+export default app;
