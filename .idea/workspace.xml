@@ -79,7 +79,20 @@
       <recent name="C:\Users\User\Documents\Geolocation\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.GET distance./POST get error distance is missing">
+  <component name="RunManager" selected="Jest.GET distance">
+    <configuration name="GET distance" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/distance_test.ts" />
+      <test-names>
+        <test-name value="GET distance" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="GET distance./GET error destination is missing" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -132,23 +145,13 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="test" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.GET distance" />
         <item itemvalue="Jest.GET distance./POST get error distance is missing" />
         <item itemvalue="Jest.GET distance./GET error destination is missing" />
         <item itemvalue="Jest.GET distance./GET error source is missing" />
         <item itemvalue="npm.start" />
-        <item itemvalue="npm.test" />
       </list>
     </recent_temporary>
   </component>
