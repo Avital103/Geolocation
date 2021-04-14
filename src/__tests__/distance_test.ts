@@ -8,4 +8,13 @@ describe('GET distance', () => {
         expect(res.body).toHaveProperty('distance')
         done()
     });
+
+    it('/POST add distance for test and test 2', async (done) => {
+        const res = await request(app).post('/distance')
+            .send({
+                "source": "test", "destination": "test2", "distance": 79
+            })
+        expect(res.status).toBe(201);
+        done()
+    });
 });
