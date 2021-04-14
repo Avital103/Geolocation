@@ -1,5 +1,5 @@
 import express from 'express';
-import {getDistanceBySourceAndDestination, saveToDB} from '../data_access/distance_data_access'
+import {getDistanceBySourceAndDestination, saveToDB, updatePopularSearch} from '../data_access/distance_data_access'
 import {getDistanceKm} from '../business_logic/geolocation_bl'
 import {checkConnectionToDB} from "../models";
 
@@ -18,6 +18,7 @@ distanceRouter.get('/', async function (req, res) {
                 result = await getDistanceBySourceAndDestination(sourceString, destinationString);
                 if (result != null) {
                     distance = result.distance;
+                    await updatePopularSearch(sourceString, destinationString);
                 }
             }
             if (!isConnectionOpen || result == null) {
