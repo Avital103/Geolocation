@@ -1,6 +1,5 @@
 let express = require('express');
 let cookieParser = require('cookie-parser');
-let logger = require('morgan');
 
 let indexRouter = require('./routes/index');
 
@@ -16,7 +15,7 @@ const PORT = 8080;
 
 if (process.env.NODE_ENV !== 'test') {
     app.listen(PORT, () => {
-        logger('info', `listning on port ${PORT}`);
+        console.log('info', `listning on port ${PORT}`);
     });
 }
 
