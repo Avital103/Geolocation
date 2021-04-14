@@ -1,6 +1,7 @@
 import express from 'express';
 import {getDistanceBySourceAndDestination, saveToDB} from '../data_access/distance_data_access'
 import {getDistanceKm} from '../business_logic/geolocation_bl'
+import {checkConnectionToDB} from "../models";
 
 let distanceRouter = express.Router();
 
@@ -11,10 +12,15 @@ distanceRouter.get('/', async function (req, res) {
         try {
             let sourceString = source.toString();
             let destinationString = destination.toString();
-            let result = await getDistanceBySourceAndDestination(sourceString, destinationString);
-            if (result != null) {
-                distance = result.distance;
-            } else {
+            let isConnectionOpen = checkConnectionToDB();
+            let result = null;
+            if (isConnectionOpen) {
+                result = await getDistanceBySourceAndDestination(sourceString, destinationString);
+                if (result != null) {
+                    distance = result.distance;
+                }
+            }
+            if (!isConnectionOpen || result == null) {
                 distance = await getDistanceKm(sourceString, destinationString);
                 if (distance) {
                     saveToDB(sourceString, destinationString, distance)
