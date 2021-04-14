@@ -9,12 +9,36 @@ describe('GET distance', () => {
         done()
     });
 
+    it('/GET error source is missing', async (done) => {
+        const res = await request(app).get('/distance?destination=jerusalem')
+        expect(res.status).toBe(400);
+        expect(res.body).toHaveProperty('errors')
+        done()
+    });
+
+    it('/GET error destination is missing', async (done) => {
+        const res = await request(app).get('/distance?source=jerusalem')
+        expect(res.status).toBe(400);
+        expect(res.body).toHaveProperty('errors')
+        done()
+    });
+
     it('/POST add distance for test and test 2', async (done) => {
         const res = await request(app).post('/distance')
             .send({
                 "source": "test", "destination": "test2", "distance": 79
             })
         expect(res.status).toBe(201);
+        done()
+    });
+
+    it('/POST get error distance is missing', async (done) => {
+        const res = await request(app).post('/distance')
+            .send({
+                "source": "test", "destination": "test2"
+            })
+        expect(res.status).toBe(400);
+        expect(res.body).toHaveProperty('errors')
         done()
     });
 });
