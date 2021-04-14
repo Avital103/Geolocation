@@ -6,14 +6,14 @@ import {checkConnectionToDB} from "../models";
 let distanceRouter = express.Router();
 
 distanceRouter.get('/', async function (req, res) {
-    let {source, destination} = req.query;
     let distance
+    let {source, destination} = req.query;
     if (source && destination) {
         try {
             let sourceString = source.toString();
             let destinationString = destination.toString();
-            let isConnectionOpen = checkConnectionToDB();
             let result = null;
+            let isConnectionOpen = await checkConnectionToDB();
             if (isConnectionOpen) {
                 result = await getDistanceBySourceAndDestination(sourceString, destinationString);
                 if (result != null) {
