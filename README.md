@@ -9,6 +9,8 @@ listening on port 8080 and exposing a set of APIs as described below.
 Get the distance in KM between a source and destination
 
 > Takes the distance from a local DB. If the source and destination combination do not already exist in the DB, or the DB is not accessible, get the info from an external service and store it in the DB (if it’s accessible) before returning the distance to the user
+> 
+> NOTE: this doesn't check the country and returns the first city it found.
 
 Response:
 Response code: 200, Response body: {"distance": numberOfKMs}
