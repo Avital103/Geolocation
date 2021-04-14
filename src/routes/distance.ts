@@ -1,11 +1,12 @@
-import express from 'express';
+import express, {Request, Response} from 'express';
 import {getDistanceBySourceAndDestination, saveToDB, updatePopularSearch} from '../data_access/distance_data_access'
 import {getDistanceKm} from '../business_logic/geolocation_bl'
 import {checkConnectionToDB} from "../models";
+import {handleValidations, validateReqBodyData, validateReqData} from "../validate_data_mw/valiadte_data_mw";
 
 let distanceRouter = express.Router();
 
-distanceRouter.get('/', async function (req, res) {
+distanceRouter.get('/', validateReqData(), handleValidations, async function (req: Request, res: Response) {
     let distance
     let {source, destination} = req.query;
     if (source && destination) {
@@ -36,7 +37,7 @@ distanceRouter.get('/', async function (req, res) {
     res.status(200).send({'distance': distance});
 });
 
-distanceRouter.post('/', async function (req, res) {
+distanceRouter.post('/', validateReqBodyData(), handleValidations, async function (req: Request, res: Response) {
     let {source, destination, distance} = req.body;
     if (source && destination && distance) {
         try {
