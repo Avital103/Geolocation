@@ -1,4 +1,4 @@
-let express = require('express');
+import express from 'express';
 let helloRouter = express.Router();
 
 helloRouter.get('/', function (req, res) {
