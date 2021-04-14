@@ -1,13 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d4b1cf8-5f5d-40d1-ac91-357b7d22ecaa" name="Default Changelist" comment="" />
+    <list default="true" id="2d4b1cf8-5f5d-40d1-ac91-357b7d22ecaa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__tests__/hello_test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jest.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/distance.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1r9ozHYTBd8Ftd2jcCF06b2opiW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -15,15 +62,46 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.15.1" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.14.37" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="Jest.GET hello./GET - should return code 200">
+    <configuration name="GET hello" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/__tests__/hello_test.js" />
+      <test-names>
+        <test-name value="GET hello" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="GET hello./GET - should return code 200" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/__tests__/hello_test.js" />
+      <test-names>
+        <test-name value="GET hello" />
+        <test-name value="/GET - should return code 200" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -36,6 +114,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.GET hello./GET - should return code 200" />
+        <item itemvalue="Jest.GET hello" />
+        <item itemvalue="npm.start" />
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
@@ -48,29 +129,47 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1618397926971</updated>
-      <workItem from="1618397928099" duration="1124000" />
+      <workItem from="1618397928099" duration="2764000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1259" height="156" key="GridCell.Tab.0.bottom" timestamp="1618398688692">
+    <state width="1259" height="156" key="GridCell.Tab.0.bottom" timestamp="1618400358418">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="156" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1618398688692" />
-    <state width="1259" height="156" key="GridCell.Tab.0.center" timestamp="1618398688692">
+    <state width="1259" height="156" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1618400358418" />
+    <state width="1259" height="156" key="GridCell.Tab.0.center" timestamp="1618400358418">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="156" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1618398688692" />
-    <state width="1259" height="156" key="GridCell.Tab.0.left" timestamp="1618398688692">
+    <state width="1259" height="156" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1618400358418" />
+    <state width="1259" height="156" key="GridCell.Tab.0.left" timestamp="1618400358417">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="156" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1618398688692" />
-    <state width="1259" height="156" key="GridCell.Tab.0.right" timestamp="1618398688692">
+    <state width="1259" height="156" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1618400358417" />
+    <state width="1259" height="156" key="GridCell.Tab.0.right" timestamp="1618400358418">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="156" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1618398688692" />
+    <state width="1259" height="156" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1618400358418" />
+    <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1618400098327">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.680@0.0.1280.680" timestamp="1618400098327" />
   </component>
 </project>
