@@ -23,6 +23,13 @@ describe('GET distance', () => {
         done()
     });
 
+    it('/GET error missing one or more information', async (done) => {
+        const res = await request(app).get('/distance?source=jerusalem&destination')
+        expect(res.status).toBe(400);
+        expect(res.body).toHaveProperty('error')
+        done()
+    });
+
     it('/POST add distance for test and test 2', async (done) => {
         const res = await request(app).post('/distance')
             .send({

@@ -32,7 +32,10 @@ distanceRouter.get('/', validateReqData(), handleValidations, async function (re
             }
         } catch (e) {
             console.log(e)
+            return res.status(500).send({error: e})
         }
+    } else {
+        return res.status(400).send({error: 'missing one or more information'});
     }
     res.status(200).send({'distance': distance});
 });
@@ -44,8 +47,8 @@ distanceRouter.post('/', validateReqBodyData(), handleValidations, async functio
         res.status(201).send();
     } catch (e) {
         console.log(e)
+        res.status(400).send('missing info');
     }
-    res.status(400).send('missing info');
 });
 
 module.exports = distanceRouter;

@@ -27,7 +27,7 @@ export function saveToDB(source: string, destination: string, distance: number) 
     });
 }
 
-async function getLastPopularSearchValue(source: string, destination: string) {
+async function getUpdatedHitsValue(source: string, destination: string) {
     let result = await Distance.findOne({
         attributes: ['hits'],
         where: {
@@ -53,7 +53,7 @@ async function getLastPopularSearchValue(source: string, destination: string) {
 }
 
 export async function updatePopularSearch(source: string, destination: string) {
-    let result = await getLastPopularSearchValue(source, destination);
+    let result = await getUpdatedHitsValue(source, destination);
     Distance.update({
         hits: result
     }, {
