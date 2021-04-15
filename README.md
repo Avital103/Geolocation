@@ -27,7 +27,8 @@ Response Body: empty if connection to DB is ok. Error message if connection to D
 - GET /popularsearch
 
 > get the most popular search and number of hits for that search
-There is no difference between destination and source, as long as it is a matching pair
+> 
+> NOTE: There is no difference between destination and source, as long as it is a matching pair
 
 Response:
 Response code: 200
@@ -37,6 +38,9 @@ Example: {"source": "jerusalem", "destination": "telaviv", "hits": 234}
 - POST /distance
 
 > allow ingesting a pair
+> 
+> NOTE: this doesn't check if this pair already exists.
+
 Body:
 Json object holding source, destination and distance
 Example: {"source": "jerusalem", "destination": "telaviv", "distance": 100}
