@@ -40,6 +40,7 @@ Example: {"source": "jerusalem", "destination": "telaviv", "hits": 234}
 > allow ingesting a pair
 > 
 > NOTE: this doesn't check if this pair already exists.
+
 Body:
 Json object holding source, destination and distance
 Example: {"source": "jerusalem", "destination": "telaviv", "distance": 100}
