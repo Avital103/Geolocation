@@ -25,7 +25,9 @@ distanceRouter.get('/', validateReqData(), handleValidations, async function (re
             if (!isConnectionOpen || result == null) {
                 distance = await getDistanceKm(sourceString, destinationString);
                 if (distance) {
-                    saveToDB(sourceString, destinationString, distance)
+                    if (isConnectionOpen) {
+                        saveToDB(sourceString, destinationString, distance)
+                    }
                 } else {
                     res.status(400).send({error: 'cant find one of the cities'})
                 }

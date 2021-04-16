@@ -21,10 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5a2d0da1-754b-46cf-b52f-e07f7bf305a8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__tests__/distance_test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/distance_test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data_access/distance_data_access.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_access/distance_data_access.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/distance.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/distance.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/popular_search.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/popular_search.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +75,7 @@
       <recent name="C:\Users\User\Documents\Geolocation\src" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="Jest.GET distance">
     <configuration name="GET distance" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -92,7 +89,7 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="GET distance./GET error" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="GET distance./GET error missing one or more information" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
@@ -102,7 +99,7 @@
       <test-file value="$PROJECT_DIR$/src/__tests__/distance_test.ts" />
       <test-names>
         <test-name value="GET distance" />
-        <test-name value="/GET error" />
+        <test-name value="/GET error missing one or more information" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -142,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
         <item itemvalue="Jest.GET distance" />
+        <item itemvalue="Jest.GET distance./GET error missing one or more information" />
+        <item itemvalue="npm.start" />
         <item itemvalue="npm.test" />
         <item itemvalue="Jest.GET hello./GET - should return code 200" />
-        <item itemvalue="Jest.GET distance./GET error" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +157,7 @@
       <updated>1618401368974</updated>
       <workItem from="1618401370172" duration="324000" />
       <workItem from="1618401715783" duration="12472000" />
-      <workItem from="1618414359408" duration="16122000" />
+      <workItem from="1618414359408" duration="18053000" />
     </task>
     <task id="LOCAL-00001" summary="add unit test">
       <created>1618401825015</created>
@@ -239,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618428904244</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="code review">
+      <created>1618460951371</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1618460951371</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,7 +272,8 @@
     <MESSAGE value="API 5: allow ingesting a pair" />
     <MESSAGE value="add .env_example" />
     <MESSAGE value="add express-validator" />
-    <option name="LAST_COMMIT_MESSAGE" value="add express-validator" />
+    <MESSAGE value="code review" />
+    <option name="LAST_COMMIT_MESSAGE" value="code review" />
   </component>
   <component name="WindowStateProjectService">
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618401415090">
@@ -291,26 +296,26 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="396" y="44" width="727" height="593" key="#xdebugger.evaluate/0.0.1280.680@0.0.1280.680" timestamp="1618423367868" />
-    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1618418416530">
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1618461736878">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1618418416530" />
-    <state width="1259" height="214" key="GridCell.Tab.0.bottom" timestamp="1618460773362">
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1618461736878" />
+    <state width="1259" height="214" key="GridCell.Tab.0.bottom" timestamp="1618566526271">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="214" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1618460773362" />
-    <state width="1259" height="214" key="GridCell.Tab.0.center" timestamp="1618460773362">
+    <state width="1259" height="214" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1618566526271" />
+    <state width="1259" height="214" key="GridCell.Tab.0.center" timestamp="1618566526270">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="214" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1618460773362" />
-    <state width="1259" height="214" key="GridCell.Tab.0.left" timestamp="1618460773362">
+    <state width="1259" height="214" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1618566526270" />
+    <state width="1259" height="214" key="GridCell.Tab.0.left" timestamp="1618566526269">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="214" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1618460773362" />
-    <state width="1259" height="214" key="GridCell.Tab.0.right" timestamp="1618460773362">
+    <state width="1259" height="214" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1618566526269" />
+    <state width="1259" height="214" key="GridCell.Tab.0.right" timestamp="1618566526270">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="214" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1618460773362" />
+    <state width="1259" height="214" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1618566526270" />
     <state width="1259" height="241" key="GridCell.Tab.1.bottom" timestamp="1618460708516">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -363,10 +368,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="0" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1618410904978" />
-    <state x="233" y="61" key="Vcs.Push.Dialog.v2" timestamp="1618428906328">
+    <state x="233" y="61" key="Vcs.Push.Dialog.v2" timestamp="1618460953641">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="61" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1618428906328" />
+    <state x="233" y="61" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1618460953641" />
     <state x="458" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1618459486390">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -375,23 +380,5 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="347" y="73" width="587" height="534" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1618424851755" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/routes/distance.ts</url>
-          <line>19</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/routes/distance.ts</url>
-          <line>24</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
